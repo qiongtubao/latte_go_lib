@@ -29,7 +29,3 @@ func ReadFile(fileName string) (string, error) {
 	fd, err := ioutil.ReadAll(file)
 	return string(fd), err
 }
-
-func ReadDir(dirName string) ([]string, error) {
-
-}
