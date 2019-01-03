@@ -1,4 +1,4 @@
-package lib
+package latte_go_lib
 
 import (
 	"testing"
