@@ -30,3 +30,9 @@ func ToJson(data interface{}) (string, error) {
 	}
 	return string(jsonBytes), nil
 }
+
+func JSONToMap(data string) (map[string]interface{}, error) {
+	var m map[string]interface{}
+	err := json.Unmarshal([]byte(data), &m)
+	return m, err
+}
