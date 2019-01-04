@@ -1,6 +1,7 @@
 package latte_go_lib
 
 import (
+	"encoding/json"
 	"strconv"
 )
 
@@ -20,4 +21,12 @@ func Int64ToInt(data int64) int {
 	string := strconv.FormatInt(data, 10)
 	intstr, _ := strconv.Atoi(string)
 	return intstr
+}
+
+func ToJson(data interface{}) (string, error) {
+	jsonBytes, err := json.Marshal(data)
+	if err != nil {
+		return "", err
+	}
+	return string(jsonBytes), nil
 }
