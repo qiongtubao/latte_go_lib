@@ -1,0 +1,11 @@
+language: go
+sudo: false
+go: 
+  - tip
+
+notifications:
+  email: false
+beforeinstall: 
+  - go install github.com/silenceper/pool
+script:
+  - go test ./
