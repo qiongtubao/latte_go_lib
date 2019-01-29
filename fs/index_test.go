@@ -4,7 +4,7 @@ import (
 	"testing"
 )
 
-func TestWriteFile(t *testing.T) {
+func Test_WriteFile(t *testing.T) {
 	error := WriteFile("test.txt", "test string")
 	if error != nil {
 		t.Error("write File error")
@@ -12,7 +12,7 @@ func TestWriteFile(t *testing.T) {
 		t.Log("write File ok")
 	}
 }
-func TestReadFile(t *testing.T) {
+func Test_ReadFile(t *testing.T) {
 	data, error := ReadFile("test.txt")
 	if error != nil {
 		t.Error(error)

@@ -36,3 +36,10 @@ func JSONToMap(data string) (map[string]interface{}, error) {
 	err := json.Unmarshal([]byte(data), &m)
 	return m, err
 }
+
+/**
+支持interface{} 转换成string
+*/
+func ToString(data interface{}) string {
+	return ""
+}
