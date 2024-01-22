@@ -1,0 +1,11 @@
+[log]
+level = "info"
+[storage]
+api-version = 2
+enable-ttl = true
+[resolved-ts]
+advance-ts-interval = "20s" # The default value is "20s". You can set it to a smaller value such as "1s" to advance the Resolved TS timestamp more frequently.
+[raftstore]
+raft-store-max-leader-lease = "9s"
+[coprocessor]
+region-split-size="2MB"

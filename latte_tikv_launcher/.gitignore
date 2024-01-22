@@ -1,0 +1,6 @@
+./scripts/pd-server
+./scripts/tikv-server
+./scripts/pd_data12369
+./scripts/tikv12369_data
+./scripts/tikv12369.log
+./scripts/pd12369.log
